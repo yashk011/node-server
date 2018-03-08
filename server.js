@@ -50,7 +50,15 @@ app.get('/about' , (req , res) =>{
 
 });
 
-app.get('/bad' , (req , res) => {
+app.get('/projects' , (req , res) => {
+  res.render('projects.hbs' , {
+
+    pageTitle: 'List of Projects'
+  });
+
+});
+
+app.get('/bad2' , (req , res) => {
 
   res.send({
       errorMessage : 'Something is wrong '
